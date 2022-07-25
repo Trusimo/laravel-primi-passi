@@ -8,5 +8,9 @@
 </head>
 <body>
     <h1>Hello World</h1>
+    <p>La mia auto è una {{ $macchina['marca']}},
+        modello {{ $macchina['modello']}}
+        del {{ $macchina['anno']}}. E' {{ $macchina['colore']}}.
+    </p>
 </body>
 </html>

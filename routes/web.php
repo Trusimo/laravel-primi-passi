@@ -14,5 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
-});
+    $auto = [
+        'marca' => 'Suzuki',
+        'modello' => 'Swift',
+        'anno' => '2012',
+        'colore' => 'nera'
+    ];
+
+    return view("home", [
+        "macchina" => $auto
+    ]);
+
+})->name("home");
